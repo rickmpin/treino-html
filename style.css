@@ -1,0 +1,181 @@
+/* Importação de Fontes (Exemplo - substitua pelas fontes que você escolher) */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Estilos Globais */
+body {
+    font-family: 'Open Sans', sans-serif; /* Fonte para o corpo de texto */
+    color: #333; /* Cor padrão do texto (pode ajustar) */
+    background-color: #F0EAD6; /* Bege Claro - Fundo principal */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif; /* Fonte para títulos */
+    color: #22574A; /* Verde Floresta Profundo - Cor dos títulos */
+    margin-bottom: 15px; /* Espaço abaixo dos títulos */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamanho maior para o título principal */
+    text-align: center; /* Centraliza o título principal */
+    margin-bottom: 30px; /* Mais espaço abaixo do título principal */
+      color: #22574A;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #E8C065; /* Adiciona uma linha amarela mostarda abaixo do h2 */
+    padding-bottom: 5px; /* Espaço entre o texto do h2 e a linha */
+    margin-bottom: 25px; /* Mais espaço abaixo do h2 */
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #7F5539; /* Marrom Terra para h3 */
+    margin-bottom: 20px;
+}
+
+
+/* Parágrafos */
+p {
+    margin-bottom: 20px; /* Espaço abaixo dos parágrafos */
+    color: #555; /* Cor um pouco mais escura para o texto do corpo */
+    text-align: center; /* Justifica o texto para um visual mais formal */
+}
+
+/* Links */
+a {
+    color: #1A4D2E; /* Azul Água Profundo - Cor dos links */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    transition: color 0.3s ease; /* Transição suave na cor ao passar o mouse */
+}
+
+a:hover {
+    color: #C77C38; /* Laranja Queimado - Cor dos links ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Botões (Exemplo) */
+button {
+    background-color: #558B2F; /* Verde Musgo - Cor de fundo dos botões */
+    color: #F0EAD6; /* Bege Claro - Cor do texto dos botões */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7F5539; /* Marrom Terra - Cor de fundo dos botões ao passar o mouse */
+}
+
+/* Layout Básico (Exemplo de um container centralizado) */
+.container {
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 20px; /* Adiciona padding interno */
+    /* Adicionando um leve sombreamento para dar profundidade */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF; /* Fundo branco para os containers */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 30px; /* Espaço entre os containers */
+}
+
+/* Estilos para seções */
+.section {
+    padding: 40px 0; /* Espaço acima e abaixo de cada seção */
+    /* Removendo a linha divisória da seção, pois o container já tem um espaçamento e sombra */
+    /* border-bottom: 1px solid #d3d3d3; */
+    /* Podemos adicionar um fundo levemente diferente para algumas seções, se quisermos */
+    /* background-color: #FAFAFA; */
+    /* border-radius: 8px; */ /* Bordas arredondadas para seções dentro do container */
+}
+
+/* Estilo específico para a primeira seção (opcional) */
+.section:first-of-type {
+    padding-top: 20px; /* Menos padding no topo da primeira seção dentro do container */
+}
+
+/* Estilo específico para a última seção (opcional) */
+.section:last-of-type {
+    padding-bottom: 20px; /* Menos padding na parte inferior da última seção dentro do container */
+    border-bottom: none; /* Garante que a última seção não tenha borda inferior se você decidir usá-la */
+}
+
+
+/* Espaço em Branco */
+/* Adicione classes para criar espaço entre elementos, se necessário */
+.spacing-top {
+    margin-top: 30px;
+}
+
+.spacing-bottom {
+    margin-bottom: 30px;
+}
+
+/* Imagens (Exemplo - para imagens dentro do conteúdo) */
+img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Transforma a imagem em um elemento de bloco */
+    margin: 0 auto 20px auto; /* Centraliza a imagem e adiciona 20px de espaço abaixo */
+    border-radius: 5px; /* Bordas arredondadas para imagens */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Leve sombra para imagens */
+    /* Removidas: justify-content: center; align-items: center; */
+}
+
+/* Cores de Destaque para elementos específicos (Exemplo) */
+.highlight-text {
+    color: #C77C38; /* Laranja Queimado */
+    font-weight: bold;
+}
+
+.accent-background {
+    background-color: #E8C065; /* Amarelo Mostarda */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block; /* Para que o background se ajuste ao conteúdo */
+}
+
+/* Rodapé */
+footer {
+    background-color: #22574A; /* Verde Floresta Profundo */
+    color: #F0EAD6; /* Bege Claro */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px; /* Espaço acima do rodapé */
+}
+
+footer a {
+    color: #F0EAD6; /* Cor dos links no rodapé */
+    text-decoration: underline; /* Sublinhado nos links do rodapé */
+}
+
+footer a:hover {
+    color: #C77C38; /* Cor dos links no rodapé ao passar o mouse */
+}
+
+/* Estilos para o cabeçalho (opcional - se você tiver um header com banner) */
+header {
+    background-color: #558B2F; /* Verde Musgo */
+    color: #F0EAD6; /* Bege Claro */
+    padding: 40px 0; /* Espaço acima e abaixo do cabeçalho */
+    text-align: center;
+    /* Se tiver uma imagem de banner, você pode adicionar background-image aqui */
+    /* background-image: url('caminho/para/sua/imagem-banner.jpg'); */
+    background-size: cover; /* Cobre toda a área do cabeçalho */
+    background-position: center; /* Centraliza a imagem */
+    margin-bottom: 30px; /* Espaço entre o cabeçalho e o primeiro container */
+}
+
+header h1 {
+    color: #F0EAD6; /* Cor do título no cabeçalho */
+    margin: 0; /* Remove a margem padrão do h1 dentro do header */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra no texto do título */
+}
