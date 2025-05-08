@@ -66,9 +66,8 @@ p {
     /* Espaço abaixo dos parágrafos */
     color: #555;
     /* Cor um pouco mais escura para o texto do corpo */
-    text-align: center;
+    text-align: justify;
     /* Justifica o texto para um visual mais formal */
-
 }
 
 /* Links */
