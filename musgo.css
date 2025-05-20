@@ -1,0 +1,247 @@
+/* Importação de Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Estilos Globais */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #F0EAD6; /* Bege Claro */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lora', serif;
+    color: #22574A; /* Verde Floresta Profundo */
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #22574A;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #E8C065;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #7F5539; /* Marrom Terra */
+    margin-bottom: 20px;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 20px;
+    color: #555;
+    text-align: justify;
+}
+
+/* Links */
+a {
+    color: #1A4D2E; /* Azul Água Profundo */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #C77C38; /* Laranja Queimado */
+    text-decoration: underline;
+}
+
+/* Botões */
+button {
+    background-color: #558B2F; /* Verde Musgo */
+    color: #F0EAD6; /* Bege Claro */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #7F5539; /* Marrom Terra */
+}
+
+/* Layout geral */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Seções */
+.section {
+    padding: 40px 0;
+}
+.section:first-of-type {
+    padding-top: 20px;
+}
+.section:last-of-type {
+    padding-bottom: 20px;
+    border-bottom: none;
+}
+
+/* Espaçamentos */
+.spacing-top {
+    margin-top: 30px;
+}
+.spacing-bottom {
+    margin-bottom: 30px;
+}
+
+/* Imagens */
+img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Destaques */
+.highlight-text {
+    color: #C77C38;
+    font-weight: bold;
+}
+.accent-background {
+    background-color: #E8C065;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Rodapé */
+footer {
+    background-color: #22574A; /* Verde Floresta Profundo */
+    color: #F0EAD6; /* Bege Claro */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+footer a {
+    color: #F0EAD6;
+    text-decoration: underline;
+}
+footer a:hover {
+    color: #C77C38;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #558B2F; /* Verde Musgo */
+    color: #F0EAD6;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    color: #E8C065;
+}
+
+/* Cladograma */
+.cladogram-container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #FAFAFA;
+    border: 1px solid #E8C065;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+.cladogram {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.cladogram ul {
+    list-style: none;
+    padding-left: 30px;
+    margin: 0;
+    position: relative;
+}
+.cladogram li {
+    margin: 10px 0;
+    position: relative;
+    padding-left: 30px;
+}
+/* Linhas verticais e horizontais do cladograma */
+.cladogram li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 2px solid #7F5539; /* Marrom Terra */
+    height: 50%;
+    width: 0;
+}
+.cladogram li:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-top: 2px solid #7F5539;
+    width: 25px;
+    transform: translateY(-1px);
+}
+/* Ajuste para o primeiro filho */
+.cladogram ul li:first-child:before {
+    height: 50%;
+}
+/* Para os demais filhos */
+.cladogram ul li:not(:first-child):before {
+    height: 100%;
+}
+/* Último filho */
+.cladogram ul li:last-child:before {
+    height: 50%;
+}
+/* Raiz */
+.cladogram > li:before {
+    height: 100%;
+}
+.cladogram .clade-name {
+    font-weight: bold;
+    color: #22574A;
+    display: inline-block;
+}
+.cladogram li ul {
+    margin-top: 5px;
+    padding-left: 0;
+}
+.cladogram li:not(:has(ul)) {
+    font-style: italic;
+    color: #555;
+}
+.cladogram li > span,
+.cladogram li:not(:has(ul)) {
+    position: relative;
+    z-index: 1;
+    background-color: #FAFAFA;
+    padding-right: 5px;
+}
